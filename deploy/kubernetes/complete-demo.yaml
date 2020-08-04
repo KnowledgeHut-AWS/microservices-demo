@@ -39,6 +39,11 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -100,6 +105,11 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -146,6 +156,11 @@ spec:
           containerPort: 3306
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -195,6 +210,11 @@ spec:
           readOnlyRootFilesystem: true
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -246,6 +266,11 @@ spec:
           readOnlyRootFilesystem: true
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -304,6 +329,11 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -365,6 +395,11 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -414,6 +449,11 @@ spec:
           readOnlyRootFilesystem: true
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -454,6 +494,11 @@ spec:
         - containerPort: 80
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -506,6 +551,11 @@ spec:
           readOnlyRootFilesystem: true
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -567,6 +617,11 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -624,6 +679,11 @@ spec:
             medium: Memory
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
@@ -676,6 +736,11 @@ spec:
           readOnlyRootFilesystem: true
       nodeSelector:
         beta.kubernetes.io/os: linux
+      tolerations:
+        - effect: NoExecute
+          operator: Exists
+        - effect: NoSchedule
+          operator: Exists
 ---
 apiVersion: v1
 kind: Service
