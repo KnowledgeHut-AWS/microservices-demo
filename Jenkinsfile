@@ -10,6 +10,7 @@ pipeline {
       agent {
         docker {
           image 'alpine'
+          args '-v /run/docker.sock:/run/docker.sock'
         }
 
       }
@@ -23,6 +24,7 @@ echo "Hello World"'''
       agent {
         docker {
           image 'alpine'
+          args '-v /run/docker.sock:/run/docker.sock'
         }
 
       }
@@ -35,6 +37,7 @@ echo "Hello World"'''
       agent {
         docker {
           image 'alpine'
+          args '-v /run/docker.sock:/run/docker.sock'
         }
 
       }
