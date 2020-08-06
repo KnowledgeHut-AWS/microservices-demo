@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
       image 'bryandollery/terraform-packer-aws-alpine'
+      args '-v /run/docker.sock:/run/docker.sock'
     }
 
   }
